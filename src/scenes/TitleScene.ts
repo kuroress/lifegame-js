@@ -16,12 +16,12 @@ export class TitleScene extends Container implements IScene {
   }
   public update(framePassed: number): void {
     Manager.changeScene(new GameScene());
-	}
+  }
   public onKeyDown(e: KeyboardEvent): void {
     switch (e.code) {
       case "Enter":
-        console.log("Start");
         Manager.changeScene(new GameScene());
+        break;
     }
   }
 }
